@@ -98,10 +98,10 @@ const Nav: FC = memo(() => {
 											</WithCursor>
 										</CustomStyledTooltip>
 									) : i18nLabel === 'header.nav.options.title' ? (
-										<FlexDivRow>
+										<LinkIconContainer>
 											{t(i18nLabel)}
 											<LinkIconLight height={18} width={18} style={{ paddingLeft: 5 }} />
-										</FlexDivRow>
+										</LinkIconContainer>
 									) : (
 										t(i18nLabel)
 									)}
@@ -128,6 +128,12 @@ const Nav: FC = memo(() => {
 		</nav>
 	);
 });
+
+const LinkIconContainer = styled(FlexDivRow)`
+	path {
+		fill: ${(props) => props.theme.colors.selectedTheme.linkIcon};
+	}
+`;
 
 const CustomStyledTooltip = styled(Tooltip)`
 	padding: 10px;

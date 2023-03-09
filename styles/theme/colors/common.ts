@@ -113,6 +113,7 @@ const common = {
 		gray: '#787878',
 		gray2: '#3F3F3F',
 		rewardTitle: '#ECE8E3',
+		linkIcon: '#FFB800',
 	},
 	light: {
 		white: '#F2F2F2',
@@ -129,6 +130,7 @@ const common = {
 		gray: '#515151',
 		gray2: '#D2D2D2', // TODO: Update once added to designs
 		rewardTitle: '#171002',
+		linkIcon: '#787878',
 	},
 	palette,
 };
